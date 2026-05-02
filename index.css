@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-app: #0d1117;
+    --bg-surface: #111827;
+    --bg-deep: #0a0e15;
+    --bg-hover: #1c2536;
+    --border: #1e2d40;
+    --border-light: #2d3f57;
+    --border-focus: #4f6fa0;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #4b5563;
+    --text-accent: #a78bfa;
+    --purple: #a78bfa;
+    --purple-d: #4f46e5;
+    --green: #34d399;
+    --orange: #fb923c;
+    --blue: #60a5fa;
+    --pink: #f472b6;
+    --yellow: #facc15;
+    --teal: #2dd4bf;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: var(--bg-app);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-app);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-light);
+    border-radius: 3px;
+}
+
+
+/* ReactFlow edge/control overrides */
+
+.react-flow__controls-button {
+    background: #111827 !important;
+    border-color: #1e2d40 !important;
+    fill: #94a3b8 !important;
+}
+
+.react-flow__controls-button:hover {
+    background: #1c2536 !important;
+    fill: #e2e8f0 !important;
+}
